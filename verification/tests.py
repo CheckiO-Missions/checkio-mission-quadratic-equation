@@ -11,26 +11,60 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [[2, 4, 6]],
+            "answer": "2*x**2 - 20*x + 48 = 0",
+            "explanation": "ordinary case"
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": [[-2, 4, 6]],
+            "answer": "-2*x**2 + 20*x - 48 = 0",
+            "explanation": "minus a"
+        },
+        {
+            "input": [[2, 4, -4]],
+            "answer": "2*x**2 - 32 = 0",
+            "explanation": "x1 = -x2"
+        },
+        {
+            "input": [[2, 4, 0]],
+            "answer": "2*x**2 - 8*x = 0",
+            "explanation": "x2 = 0"
+        },
+        {
+            "input": [[2, 0]],
+            "answer": "2*x**2 = 0",
+            "explanation": "x1 = x2 = 0"
+        },
+        {
+            "input": [[2, 4]],
+            "answer": "2*x**2 - 16*x + 32 = 0",
+            "explanation": "x1 = x2"
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [[1, 0]],
+            "answer": "x**2 = 0"
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": [[-1, 0]],
+            "answer": "-x**2 = 0"
+        },
+        {
+            "input": [[1, 1]],
+            "answer": "x**2 - 2*x + 1 = 0"
+        },
+        {
+            "input": [[-1, 1]],
+            "answer": "-x**2 + 2*x - 1 = 0"
+        },
+        {
+            "input": [[1, 1, 0]],
+            "answer": "x**2 - x = 0"
+        },
+        {
+            "input": [[1, 1, -1]],
+            "answer": "x**2 - 1 = 0"
         }
     ]
 }

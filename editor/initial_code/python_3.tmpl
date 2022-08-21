@@ -2,19 +2,19 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def sum_two(a: int, b: int) -> int:
+def quadr_equation(data: list[int]) -> str:
     # your code here
-    return None
+    return ""
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(sum_two(1, 2))
+print(quadr_equation([2, 4, 6]))
 {% endblock %}
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}sum_two({{t.input|p_args}})
+assert {% block call %}quadr_equation({{t.input|p_args}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 
