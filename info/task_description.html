@@ -2,14 +2,11 @@
 
 <p>
     <a target="_blank" href="https://en.wikipedia.org/wiki/Quadratic_equation#Solving_the_quadratic_equation">Quadratic Equation</a>
-    may be expressed as a product:
-    <pre class="brush: python">
-        a(x-x1)(x-x2) = 0
-    </pre> 
-    where x1 and x2 are the solutions of equation, so called roots. After opening the brackets you receive well known form:
-    <pre class="brush: python">
-    a*x**2 + b*x + c = 0
-    </pre>
+    may be expressed as a product<br />
+    <strong>a(x-x1)(x-x2) = 0</strong>,<br />
+    where x1 and x2 are the solutions of equation, so called roots.
+    After opening the brackets you receive well known form<br />
+    <strong>a*x**2 + b*x + c = 0</strong>.<br />
     This is what you should do in this mission. You have input {% if is_js %}Array{% else %}list{% endif %} with
     {% if is_js %}numbers{% else %}integers{% endif %} - a, x1 [, x2]. If it has length 2, it means, x1 == x2: equation
     has two equal roots (one distinct root). You function should return quadratic equation as a string.
